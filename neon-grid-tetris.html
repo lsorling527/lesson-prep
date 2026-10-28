@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Grid Tetris</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5play/3.26.5/planck.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5play/3.26.5/p5play.js"></script>
+    <style>
+      :root {
+        --bg: #050b18;
+        --panel: #0e1830;
+        --accent: #5ee7ff;
+        --text: #e7f8ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at top, #0a1630, var(--bg) 52%);
+        color: var(--text);
+        font-family: Arial, sans-serif;
+      }
+
+      .page-shell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 24px;
+      }
+
+      .top-link {
+        align-self: flex-start;
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .top-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <a class="top-link" href="index.html">← Back to Home</a>
+      <script src="neon-grid-tetris.js"></script>
+    </div>
+  </body>
+</html>
